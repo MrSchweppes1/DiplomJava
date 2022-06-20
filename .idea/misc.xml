@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/vvoro/AndroidStudioProjects/DiplomJava/app/src/main/res/layout/activity_add_equipment.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/vvoro/AndroidStudioProjects/DiplomJava/app/src/main/res/layout/activity_add_event.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/vvoro/AndroidStudioProjects/DiplomJava/app/src/main/res/layout/activity_checklist_page.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/vvoro/AndroidStudioProjects/DiplomJava/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
       </map>
     </option>
