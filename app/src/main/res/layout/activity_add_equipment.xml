@@ -25,15 +25,14 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:clickable="true"
-        android:onClick="onClickBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ScrollView
-        android:layout_width="408dp"
-        android:layout_height="563dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +44,7 @@
         <TableLayout
             android:id="@+id/TabLay"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
     </ScrollView>
 
     <Button
@@ -53,6 +52,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
+        android:onClick="onClick"
         android:text="Сохранить данные"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20dp"
@@ -87,7 +87,6 @@
             android:layout_weight="1"
             android:background="#956cff"
             android:clickable="true"
-            android:onClick="onClickChecklist"
             app:srcCompat="@drawable/checklist_active"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -98,7 +97,6 @@
             android:layout_weight="1"
             android:background="#956cff"
             android:clickable="true"
-            android:onClick="onClickChecklist"
             app:srcCompat="@drawable/student2"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>

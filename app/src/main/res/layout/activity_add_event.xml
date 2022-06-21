@@ -24,7 +24,6 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:clickable="true"
-        android:onClick="onClickBack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow"
@@ -41,7 +40,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="385dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -128,14 +128,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:onClick="onClickAddEquip"
+        android:onClick="onClick"
         android:text="Добавить оборудование"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -164,7 +163,6 @@
             android:layout_weight="1"
             android:background="#956cff"
             android:clickable="true"
-            android:onClick="onClickChecklist"
             app:srcCompat="@drawable/checklist_active"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -175,7 +173,6 @@
             android:layout_weight="1"
             android:background="#956cff"
             android:clickable="true"
-            android:onClick="onClickStudent"
             app:srcCompat="@drawable/student2"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
