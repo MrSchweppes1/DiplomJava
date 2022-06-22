@@ -29,7 +29,6 @@ public class AddEquipment extends AppCompatActivity implements View.OnClickListe
 
         btnSave = (Button) findViewById(R.id.button);
 
-
         arrowBack = (ImageView) findViewById(R.id.arrowBack);
         CheckList = (ImageView) findViewById(R.id.CheckList);
         AddStudent = (ImageView) findViewById(R.id.AddStudent);
@@ -62,6 +61,18 @@ public class AddEquipment extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
         });
+
+        Bundle arguments = getIntent().getExtras();
+        if(arguments !=null) {
+            String wsName = arguments.get("wsTvWsh").toString();
+            String spinLess = arguments.get("wsSpinLess").toString();
+            String topLess = arguments.get("wsTopLess").toString();
+            String exer = arguments.get("wsExer").toString();
+            String crit = arguments.get("wsCrit").toString();
+            String grname = arguments.get("wsGrName").toString();
+            String calView = arguments.get("wsCalendar").toString();
+
+        }
     }
 
     @Override

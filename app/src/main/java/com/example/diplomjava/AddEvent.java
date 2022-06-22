@@ -4,18 +4,14 @@ import static com.example.diplomjava.DBhelper.Groups_GROUPNAME;
 import static com.example.diplomjava.DBhelper.TABLE_Groups;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cursoradapter.widget.SimpleCursorAdapter;
 
 import android.annotation.SuppressLint;
-import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.hardware.camera2.params.BlackLevelPattern;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -126,7 +122,7 @@ public class AddEvent extends AppCompatActivity implements View.OnClickListener{
                 String exer = exercize.toString();
                 String crit = criteria.toString();
                 String grname = groupName.getSelectedItem().toString();
-                String calView = calendarView.getSelectedDateVerticalBar().toString();
+                long calView = calendarView.getDate();
 
                 Intent intent = new Intent(this, AddEquipment.class);
                 intent.putExtra("wsTvWsh",wsName);
