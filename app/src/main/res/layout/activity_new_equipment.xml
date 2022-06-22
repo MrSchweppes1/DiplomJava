@@ -39,6 +39,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:clickable="true"
+        android:onClick="onClickIV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/arrow"
@@ -78,6 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:onClick="onClick"
         android:text="Сохранить оборудование"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="20dp"
@@ -111,6 +113,7 @@
             android:layout_weight="1"
             android:background="#956cff"
             android:clickable="true"
+            android:onClick="onClickIV"
             app:srcCompat="@drawable/checklist_active"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -121,6 +124,7 @@
             android:layout_weight="1"
             android:background="#956cff"
             android:clickable="true"
+            android:onClick="onClickIV"
             app:srcCompat="@drawable/student2"
             tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>

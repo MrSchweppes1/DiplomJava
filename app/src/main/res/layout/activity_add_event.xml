@@ -17,44 +17,50 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_masterskie" />
 
-    <ImageView
-        android:id="@+id/arrowBack"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:clickable="true"
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:gravity="center_vertical">
 
-    <TextView
-        android:id="@+id/tvWorkshops"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@+id/arrowBack"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/arrowBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvWorkshops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arrowBack">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
 
             <TextView
                 android:id="@+id/textView3"

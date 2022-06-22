@@ -37,6 +37,9 @@ public class AddStudent extends AppCompatActivity implements View.OnClickListene
         name = (EditText) findViewById(R.id.name);
         patronymic = (EditText) findViewById(R.id.patronymic);
 
+        dbHelper = new DBhelper(this);
+        database = dbHelper.getWritableDatabase();
+
         CheckList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,6 +96,11 @@ public class AddStudent extends AppCompatActivity implements View.OnClickListene
                     Toast.makeText(this, "Успешная регистрация", Toast.LENGTH_LONG).show();
                 }
                 find.close();
+
+                groupname.setText("");
+                surename.setText("");
+                name.setText("");
+                patronymic.setText("");
                 break;
 
 

@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         AddStudent = (ImageView) findViewById(R.id.AddStudent);
 
 
+
+
         CheckList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,8 +60,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
 
             case R.id.btnAddStudent:
-
+                spinner = (Spinner) findViewById(R.id.spinner);
+                String wsName = spinner.getSelectedItem().toString();
                 Intent intent = new Intent(this, AddEvent.class);
+                intent.putExtra("ws",wsName);
                 startActivity(intent);
                 break;
 
